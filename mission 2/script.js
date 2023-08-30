@@ -4,7 +4,7 @@ const products = [
   { name: 'Lego Standar', price: 30000, stock: 5, quantity: 0 },
   { name: 'Ini Lego', price: 20000, stock: 5, quantity: 0 },
   { name: 'Lego Legoan', price: 10000, stock: 5, quantity: 0 },
-  { name: 'Lego Legoan', price: 10000, stock: 5, quantity: 0 }
+  { name: 'Lego', price: 5000, stock: 5, quantity: 0 }
 ];
 
 const decreaseButtons = document.querySelectorAll('.decrease-quantity');
@@ -92,6 +92,7 @@ tambahBarangButtons.forEach((button, index) => {
 
 function updateTotalPrice() {
   const totalPriceElement = document.getElementById('total-price');
+  const totalTaxElement = document.getElementById('total-tax');
   
   const totalPrice = products.reduce((total, product) => {
     return total + product.quantity * product.price;
@@ -101,4 +102,5 @@ function updateTotalPrice() {
   const totalPriceWithTax = totalPrice + tax;
   
   totalPriceElement.textContent = `Total : Rp. ${totalPriceWithTax.toFixed(2)}`;
+  totalTaxElement.textContent = `Pajak (11%): Rp. ${tax.toFixed(2)}`; 
 }
