@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header {
+
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+}
+
+
+main {
+    display: flex;
+    justify-content: left;
+    gap: 2rem;
+    padding: 2rem;
+
+}
+
+.container {
+    flex-direction: column;
+    flex: 1;
+    width: 50%;
+    display: flex;
+}
+
+.left {
+    order: 1;
+}
+
+.right {
+    order: 2;
+    padding-top: 30px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+}
+
+.product-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.product img {
+    width: 100px;
+}
+
+.decrease-quantity {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 6px;
+    padding-left: 9px;
+    padding-right: 9px;
+    border-radius: 4px;
+}
+
+.increase-quantity {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 6px;
+    padding-left: 9px;
+    padding-right: 9px;
+    border-radius: 4px;
+}
+
+.quantity {
+    width: 30px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.tambahbarang {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.Tambah-Barang {
+    padding: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    background-color: #12d26f;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+aside {
+    background-color: #f2f2f2;
+    padding: 1rem;
+    flex: 1;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
